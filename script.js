@@ -1,40 +1,30 @@
-const menuBtn = document.querySelector('.menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-const mobileLinks = document.querySelectorAll('.mobile-menu a');
+const menuBtn = document.querySelector('.menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
 
-if (menuBtn && mobileMenu) {
+if (menuBtn && mobileNav) {
   menuBtn.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    const open = mobileNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
   });
 
-  mobileLinks.forEach((link) => {
+  mobileNav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
+      mobileNav.classList.remove('open');
       menuBtn.setAttribute('aria-expanded', 'false');
     });
   });
 }
 
-const revealTargets = document.querySelectorAll('.section-reveal');
+const currentPage = document.body.dataset.page;
+if (currentPage) {
+  document.querySelectorAll('[data-nav]').forEach((link) => {
+    if (link.dataset.nav === currentPage) {
+      link.classList.add('active');
+    }
+  });
+}
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.14,
-  },
-);
-
-revealTargets.forEach((el) => observer.observe(el));
-
-const yearEl = document.getElementById('year');
-if (yearEl) {
-  yearEl.textContent = String(new Date().getFullYear());
+const yearNode = document.getElementById('year');
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
 }
