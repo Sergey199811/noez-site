@@ -1,2 +1,23 @@
 # noez-site
-Website for NOEZ manufacturing company
+
+Промо-сайт для компании НОЭЗ (Нижегородский опытно-экспериментальный завод).
+
+## Стек
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## Запуск
+
+Самый простой способ:
+
+1. Открыть `index.html` в браузере.
+
+Либо через локальный сервер:
+
+```bash
+python3 -m http.server 4173
+```
+
+После запуска откройте: `http://localhost:4173`.
