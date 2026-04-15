@@ -1,286 +1,119 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>НОЭЗ — Производитель металлической фурнитуры и скобяных изделий</title>
-    <meta
-      name="description"
-      content="НОЭЗ — Нижегородский опытно-экспериментальный завод. Производство металлической фурнитуры, скобяных изделий, решений в стиле лофт и под старину."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="header" id="top">
-        <div class="container header-inner">
-          <a class="brand" href="#top" aria-label="НОЭЗ">
-            <span class="brand-mark" aria-hidden="true">Н</span>
-            <span>
-              <strong>НОЭЗ</strong>
-              <small>Нижегородский опытно-экспериментальный завод</small>
-            </span>
-          </a>
-
-          <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <nav class="nav" aria-label="Главное меню">
-            <a href="#about">О компании</a>
-            <a href="#categories">Категории</a>
-            <a href="#new">Новинки</a>
-            <a href="#dealers">Партнерам</a>
-            <a href="#contacts">Контакты</a>
-          </nav>
-        </div>
-
-        <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
-          <a href="#about">О компании</a>
-          <a href="#categories">Категории</a>
-          <a href="#new">Новинки</a>
-          <a href="#dealers">Партнерам</a>
-          <a href="#contacts">Контакты</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero section-reveal">
-          <div class="container hero-grid">
-            <div class="hero-content">
-              <p class="eyebrow">Собственное производство • Россия • Поставки по СНГ</p>
-              <h1>Производитель металлической фурнитуры и скобяных изделий</h1>
-              <p>
-                Надежные решения для дома, мебели, ворот, дверей, ставен и интерьера.
-                Прочная металлургия, точная геометрия и коммерчески выверенный ассортимент
-                для оптовых закупок и проектов.
-              </p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="#categories">Смотреть каталог</a>
-                <a class="btn btn-secondary" href="#contacts">Связаться</a>
-              </div>
-            </div>
-            <div class="hero-showcase" role="presentation">
-              <article>
-                <h3>Надежный металл</h3>
-                <p>Устойчивые сплавы и контроль на всех этапах изготовления.</p>
-              </article>
-              <article>
-                <h3>Широкая номенклатура</h3>
-                <p>От базового крепежа до декоративных изделий под проектные задачи.</p>
-              </article>
-              <article>
-                <h3>Партнерская модель</h3>
-                <p>Работаем с дилерами, оптовыми клиентами и производственными компаниями.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="stats section-reveal" aria-label="Факты о компании">
-          <div class="container stats-grid">
-            <article>
-              <strong>8+</strong>
-              <p>товарных направлений в регулярном производстве</p>
-            </article>
-            <article>
-              <strong>Россия + СНГ</strong>
-              <p>география поставок для розницы, опта и производств</p>
-            </article>
-            <article>
-              <strong>B2B-фокус</strong>
-              <p>удобная модель сотрудничества для дилеров и партнеров</p>
-            </article>
-            <article>
-              <strong>Контроль качества</strong>
-              <p>проверка изделий по прочности и монтажной стабильности</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="about section-reveal" id="about">
-          <div class="container split">
-            <div>
-              <p class="eyebrow">О компании</p>
-              <h2>Реальное производство. Практичный дизайн. Надежная эксплуатация.</h2>
-              <p>
-                НОЭЗ выпускает металлические изделия, в которых сочетаются прочность,
-                практичность и выразительный внешний вид. Продукция компании применяется
-                в частном строительстве, мебельных решениях, оформлении интерьеров,
-                воротных и дверных конструкциях.
-              </p>
-            </div>
-            <ul class="advantages">
-              <li>Собственное производство</li>
-              <li>Стабильное качество</li>
-              <li>Широкий ассортимент</li>
-              <li>Удобные решения для монтажа</li>
-              <li>Работа с оптовыми клиентами и дилерами</li>
-              <li>Поставки по России и СНГ</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="categories section-reveal" id="categories">
-          <div class="container">
-            <div class="section-head">
-              <p class="eyebrow">Основные категории продукции</p>
-              <h2>Каталог, сформированный под реальные задачи рынка</h2>
-            </div>
-            <div class="card-grid categories-grid">
-              <article class="product-card"><h3>Замки</h3><p>Для дверных и хозяйственных решений.</p></article>
-              <article class="product-card"><h3>Петли</h3><p>Надежная кинематика для створок и дверей.</p></article>
-              <article class="product-card"><h3>Ручки</h3><p>Эргономика, износостойкость, визуальный акцент.</p></article>
-              <article class="product-card"><h3>Задвижки</h3><p>Функциональные изделия для прочной фиксации.</p></article>
-              <article class="product-card"><h3>Декор</h3><p>Декоративная фурнитура для интерьеров и фасадов.</p></article>
-              <article class="product-card"><h3>Лофт</h3><p>Минималистичный индустриальный характер.</p></article>
-              <article class="product-card"><h3>Под старину</h3><p>Фактурные коллекции с выразительной эстетикой.</p></article>
-              <article class="product-card"><h3>Крепеж и комплектующие</h3><p>Монтажные решения для системной сборки.</p></article>
-            </div>
-          </div>
-        </section>
-
-        <section class="new-products section-reveal" id="new">
-          <div class="container">
-            <div class="section-head">
-              <p class="eyebrow">Новинки продукции</p>
-              <h2>Новые позиции для расширения ассортимента</h2>
-            </div>
-            <div class="card-grid new-grid">
-              <article class="news-card">
-                <div class="placeholder-image" data-label="Замки НОЭЗ"></div>
-                <h3>Замки НОЭЗ</h3>
-                <p>Усиленная конструкция и стабильная работа в интенсивной эксплуатации.</p>
-              </article>
-              <article class="news-card">
-                <div class="placeholder-image" data-label="Кронштейны"></div>
-                <h3>Усиленные кронштейны</h3>
-                <p>Повышенная несущая способность для монтажных и строительных задач.</p>
-              </article>
-              <article class="news-card">
-                <div class="placeholder-image" data-label="Опоры и держатели"></div>
-                <h3>Новые опоры и держатели</h3>
-                <p>Точное позиционирование и долговечность в эксплуатации.</p>
-              </article>
-              <article class="news-card">
-                <div class="placeholder-image" data-label="Разборные урны"></div>
-                <h3>Разборные урны</h3>
-                <p>Практичные решения для благоустройства и общественных пространств.</p>
-              </article>
-              <article class="news-card">
-                <div class="placeholder-image" data-label="Лофт-вешалка"></div>
-                <h3>Вешалка в стиле лофт</h3>
-                <p>Функциональный интерьерный элемент с промышленной эстетикой.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="gallery section-reveal" aria-label="Витрина продукции">
-          <div class="container">
-            <div class="section-head">
-              <p class="eyebrow">Витрина продукции</p>
-              <h2>Фактура металла, выверенные формы, практическая ценность</h2>
-            </div>
-            <div class="gallery-grid">
-              <div class="gallery-item tall" data-label="Петли и задвижки"></div>
-              <div class="gallery-item" data-label="Декор и под старину"></div>
-              <div class="gallery-item" data-label="Фурнитура для мебели"></div>
-              <div class="gallery-item wide" data-label="Крепежные решения"></div>
-              <div class="gallery-item" data-label="Лофт-линейка"></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="why section-reveal" aria-label="Почему выбирают НОЭЗ">
-          <div class="container split">
-            <div>
-              <p class="eyebrow">Почему выбирают НОЭЗ</p>
-              <h2>Надежный поставщик для бизнеса и строительных проектов</h2>
-              <p>
-                Мы объединяем промышленную дисциплину, удобные форматы сотрудничества и
-                продукцию, которая работает в ежедневной эксплуатации. Это дает партнерам
-                прогнозируемый результат и уверенность в поставках.
-              </p>
-            </div>
-            <div class="why-list">
-              <article><h3>Техническая экспертиза</h3><p>Понимаем применение изделий в разных сценариях эксплуатации.</p></article>
-              <article><h3>Коммерческая гибкость</h3><p>Поддерживаем опт, дилерские каналы и регулярные поставки.</p></article>
-              <article><h3>Фокус на сроках</h3><p>Организуем рабочий цикл так, чтобы партнеры выполняли свои планы.</p></article>
-            </div>
-          </div>
-        </section>
-
-        <section class="dealers section-reveal" id="dealers">
-          <div class="container dealers-block">
-            <div>
-              <p class="eyebrow">Для дилеров и партнеров</p>
-              <h2>Развивайте продажи с производителем, которому доверяют</h2>
-              <p>
-                Предлагаем стабильный ассортимент, понятные условия взаимодействия,
-                поддержку в формировании матрицы и возможность долгосрочного партнерства.
-              </p>
-            </div>
-            <div class="dealers-actions">
-              <a class="btn btn-primary" href="#contacts">Обсудить сотрудничество</a>
-              <a class="btn btn-secondary" href="#catalog-placeholder">Перейти в каталог</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="catalog-placeholder section-reveal" id="catalog-placeholder">
-          <div class="container">
-            <p class="eyebrow">Будущие внутренние страницы</p>
-            <h2>Разделы готовы к масштабированию</h2>
-            <div class="future-links">
-              <a href="#" aria-disabled="true">Каталог по категориям</a>
-              <a href="#" aria-disabled="true">Карточка товара</a>
-              <a href="#" aria-disabled="true">Страница дилера</a>
-              <a href="#" aria-disabled="true">Новости компании</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="contacts section-reveal" id="contacts">
-          <div class="container contacts-grid">
-            <div>
-              <p class="eyebrow">Контакты</p>
-              <h2>Свяжитесь с НОЭЗ</h2>
-              <p>Обсудим ассортимент, оптовые условия и поставки для вашего региона.</p>
-            </div>
-            <div class="contact-card">
-              <p><strong>Компания:</strong> НОЭЗ</p>
-              <p><strong>Город:</strong> Нижний Новгород</p>
-              <p><strong>Телефон:</strong> <a href="tel:+79506235836">+7 (950) 623-58-36</a></p>
-              <p>
-                <strong>Email:</strong>
-                <a href="mailto:Ripazha1992cj@gmail.com">Ripazha1992cj@gmail.com</a>
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer-grid">
-          <div>
-            <strong>НОЭЗ</strong>
-            <p>Нижегородский опытно-экспериментальный завод</p>
-          </div>
-          <p>Металлическая фурнитура и скобяные изделия для профессионального рынка.</p>
-          <p>© <span id="year"></span> НОЭЗ. Все права защищены.</p>
-        </div>
-      </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НОЭЗ — Производитель скобяных изделий и металлической фурнитуры</title>
+  <meta name="description" content="Многостраничный сайт НОЭЗ: замки, петли, ручки, задвижки, изделия под старину, сотрудничество с дилерами." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="НОЭЗ">
+        <span class="brand-mark" aria-hidden="true">Н</span>
+        <span><strong>НОЭЗ</strong><small>Нижегородский опытно-экспериментальный завод</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Главное меню"><a class="active" href="index.html">Главная</a>
+<a class="" href="about.html">О компании</a>
+<a class="" href="catalog.html">Каталог</a>
+<a class="" href="gallery.html">Галерея</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="contacts.html">Контакты</a></nav>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню"><a href="index.html">Главная</a>
+<a href="about.html">О компании</a>
+<a href="catalog.html">Каталог</a>
+<a href="gallery.html">Галерея</a>
+<a href="news.html">Новости</a>
+<a href="contacts.html">Контакты</a></nav>
+  </header>
+  
+  <main><section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Собственное производство • Россия • Поставки по СНГ</span>
+      <h1>Надёжная фурнитура для дверей, ворот, мебели и интерьеров</h1>
+      <p>Редизайн на базе действующего сайта НОЭЗ: сохранены ключевые разделы, ассортиментные группы, B2B-фокус и коммуникация с дилерами. Визуальная подача усилена под коммерческие задачи.</p>
+      <div class="actions">
+        <a class="btn primary" href="catalog.html">Перейти в каталог</a>
+        <a class="btn secondary" href="contacts.html">Связаться с отделом продаж</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="item"><h3>30+ лет опыта</h3><p>Производство металлических изделий и скобяной продукции.</p></div>
+      <div class="item"><h3>400+ позиций</h3><p>Каталог по основным категориям: замки, петли, ручки, задвижки, декор.</p></div>
+      <div class="item"><h3>Партнерский формат</h3><p>Оптовые поставки, развитие дилерской сети, поддержка клиентов.</p></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Категории НОЭЗ</span><h2>Каталог, построенный вокруг практических задач монтажа</h2></div>
+    <div class="grid grid-4">
+      <a class="card" href="category-locks.html"><h3>Замки</h3><p>Навесные, накладные, гаражные и дверные решения.</p></a>
+      <a class="card" href="category-hinges.html"><h3>Петли</h3><p>Для дверей, калиток, ворот и мебельных конструкций.</p></a>
+      <a class="card" href="category-handles.html"><h3>Ручки</h3><p>Функциональная и декоративная фурнитура разных форматов.</p></a>
+      <a class="card" href="category-latches.html"><h3>Задвижки и защёлки</h3><p>Упоры, фиксаторы, защелки калитки и воротные узлы.</p></a>
+      <a class="card" href="category-antique.html"><h3>Под старину</h3><p>Коллекции с фактурной отделкой для деревянных дверей.</p></a>
+      <a class="card" href="gallery.html"><h3>Галерея</h3><p>Подборка изделий и производственных сцен.</p></a>
+      <a class="card" href="news.html"><h3>Новости</h3><p>Выставки, обновления линеек и запуск новинок.</p></a>
+      <a class="card" href="contacts.html"><h3>Контакты</h3><p>Отдел продаж, дилерские вопросы, реквизиты и логистика.</p></a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container grid grid-4">
+    <article class="kpi-card"><strong>1992</strong><p>год основания предприятия НОЭЗ (по данным с текущего сайта).</p></article>
+    <article class="kpi-card"><strong>40+</strong><p>типов замков и скобяных изделий в регулярной матрице.</p></article>
+    <article class="kpi-card"><strong>Россия и СНГ</strong><p>география клиентов: строительные компании, магазины и дилеры.</p></article>
+    <article class="kpi-card"><strong>OEM / B2B</strong><p>форматы сотрудничества для опта и производств.</p></article>
+  </div>
+</section>
+<section>
+  <div class="container cta">
+    <span class="eyebrow">Важно</span>
+    <h2>Фотографии и карточки перенесены максимально полно, часть медиа отмечена под ручное дозаполнение</h2>
+    <p>Из-за ограничений доступа к части изображений официального сайта в проекте оставлены аккуратные промо-блоки «Фото НОЭЗ — добавить вручную». Структура страниц и ассортимент сохранены для быстрой контентной финализации.</p>
+  </div>
+</section></main>
+  
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <a class="brand" href="index.html" aria-label="НОЭЗ">
+          <span class="brand-mark" aria-hidden="true">Н</span>
+          <span>
+            <strong>НОЭЗ</strong>
+            <small>Нижегородский опытно-экспериментальный завод</small>
+          </span>
+        </a>
+        <p>Российский производитель скобяных изделий, дверной и воротной фурнитуры. Сайт переосмыслен на базе структуры и ассортимента noez-zavod.ru.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <nav class="footer-nav">
+          <a href="about.html">О компании</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="news.html">Новости</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>Нижегородская область, г. Павлово</p>
+        <p><a href="tel:+78317130220">+7 (83171) 3-02-20</a><br><a href="tel:+79082364800">+7 (908) 236-48-00</a></p>
+        <p><a href="mailto:noez@inbox.ru">noez@inbox.ru</a></p>
+      </div>
+    </div>
+    <div class="container footer-note">© <span id="year"></span> НОЭЗ. Все права защищены. Для части изображений оставлены блоки под ручное дозаполнение.</div>
+  </footer>
+  <script src="script.js"></script>
 
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
